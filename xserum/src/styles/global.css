@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+:root {
+    --black: #1a1a1a;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+.header {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background: white;
+}
+
+.header .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .container .header-items {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header .container .header-items .header-item {
+    margin-right: 50px;
+}
+
+.header .container .header-items .header-item.util-btn {
+    margin-right: 15px;
+}
+
+.header .container .header-items .header-item.highlight a {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.header .container .header-items .header-item:last-child {
+    margin-right: 0;
+}
+
+.header .container .header-items .header-item a {
+    color: var(--black);
+    font-family: 'Pretendard-Regular';
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.header .container .header-items .header-item a:hover {
+    color: black;
+    text-decoration: solid underline;
+}
+
+.header .container .header-items .header-item a img {
+    width: 50px;
+    height: 50px;
+    filter: grayscale(1);
+}
+
+.header .container .header-items .header-item a:hover img {
+    filter: grayscale(0);
+}
+
+
+.main {
+    transform: translateY(100px);
+    padding: 50px 0;
+}
+
+.main p, .main a, .main b, .main span, .main h1, .main h2, .main h3, .main input {
+    margin-bottom: 10px;
+    color: var(--black);
+    font-family: 'Pretendard-Regular';
+}
+
+.main p:last-child, .main a:last-child, .main b:last-child, .main span:last-child, .main h1:last-child, .main h2:last-child, .main h3:last-child {
+    margin-bottom: 0;
+}
+
+
+.footer {
+    transform: translateY(100px);
+    width: 100%;
+    padding: 50px 0;
+    background: var(--black);
+}
+
+.footer .container .footer-text {
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Pretendard-Regular';
+    font-size: 16px;
+}
+
+.footer .container .footer-text:last-child {
+    margin-bottom: 0;
+}
+
+
+@media only screen and (max-width: 1280px) {
+    .container {
+        padding: 0 50px;
+    }
+}
